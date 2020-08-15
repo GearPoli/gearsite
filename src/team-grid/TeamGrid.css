@@ -1,0 +1,11 @@
+
+#teams-grid {
+  flex: 1 0 100%;
+  display: flex;
+
+  /* gap: 1em 1em; */
+  width: 100%;
+
+  justify-content: center;
+  margin: auto;
+}
