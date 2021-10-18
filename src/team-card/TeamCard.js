@@ -22,11 +22,11 @@ function TeamCard (props) {
             {team.desc}
           </div>
           <div className='buttons'>
-            <a href={team.facebook}><i className='fa fa-twitter fa-2x ml-1 mr-1' /></a>
-            <a href={team.facebook}><i className='fa fa-instagram fa-2x ml-1 mr-1' /></a>
-            <a href={team.facebook}><i className='fa fa-facebook-official fa-2x ml-1 mr-1' /></a>
-            <a href={team.site}><i className='fa fa-github fa-2x ml-1 mr-1' /></a>
-            <a href={team.site}><i className='fa fa-globe fa-2x ml-1 mr-1' /></a>
+            {button_creater(team.instagram,'fa fa-instagram fa-2x ml-1 mr-1')}
+            {button_creater(team.facebook,'fa fa-facebook-official fa-2x ml-1 mr-1')}
+            {button_creater(team.github,'fa fa-github fa-2x ml-1 mr-1')}
+            {button_creater(team.site,'fa fa-globe fa-2x ml-1 mr-1')}
+            {button_creater(team.youtube,'fa fa-youtube fa-2x ml-1 mr-1')}
           </div>
         </div>
         <img src={team.logo} alt='' />
@@ -35,13 +35,19 @@ function TeamCard (props) {
   );
 }
 
+const button_creater = (link,className) => {
+  return (link !== '')? <a href={link}><i className={className} /></a>:
+                        <a><i className={className} /></a>
+};
+
 TeamCard.propTypes = {
   team: {
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     desc: PropTypes.string.isRequired,
     site: PropTypes.string.isRequired,
-    facebook: PropTypes.string.isRequired
+    facebook: PropTypes.string.isRequired,
+    youtube: PropTypes.string.isRequired
   }
 };
 
