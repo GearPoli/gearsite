@@ -14,14 +14,11 @@ function TeamCard(props) {
           <div className="name text-center">{team.name}</div>
           <div className="description text-center px-3">{team.desc}</div>
           <div className="buttons">
-            {button_creater(team.instagram, "fa fa-instagram fa-2x ml-1 mr-1")}
-            {button_creater(
-              team.facebook,
-              "fa fa-facebook-official fa-2x ml-1 mr-1"
-            )}
-            {button_creater(team.github, "fa fa-github fa-2x ml-1 mr-1")}
-            {button_creater(team.site, "fa fa-globe fa-2x ml-1 mr-1")}
-            {button_creater(team.youtube, "fa fa-youtube fa-2x ml-1 mr-1")}
+            {build_button(team.instagram, "fa fa-instagram fa-2x ml-1 mr-1")}
+            {build_button(team.facebook,"fa fa-facebook-official fa-2x ml-1 mr-1")}
+            {build_button(team.github, "fa fa-github fa-2x ml-1 mr-1")}
+            {build_button(team.site, "fa fa-globe fa-2x ml-1 mr-1")}
+            {build_button(team.youtube, "fa fa-youtube fa-2x ml-1 mr-1")}
           </div>
         </div>
         <img src={team.logo} alt="" />
@@ -30,7 +27,7 @@ function TeamCard(props) {
   );
 }
 
-const button_creater = (link, className) => {
+const build_button = (link, className) => {
   return link !== "" ? (
     <a href={link}>
       <i className={className} />
