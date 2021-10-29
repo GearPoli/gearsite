@@ -105,7 +105,7 @@ const teams = [
     youtube: "",
     cover: "./img/back_nautico.jpg",
     logo: "./svg/gear_full.svg",
-    desc: "A Associação dos Grupos de Extensão Automotivos, Aeroespacial, Aerodesign, Arquitetura Naval e Robótica (GEAR) foi fundada em 2015. Seu principal objetivo era unir, fortalecer e representar os grupos que a compõem, tendo em vista as demandas e princípios similares entre os participantes. Atualmente conta com a participação de 8 grupos, distribuídos entre projetos de robótica, veículos automotivos de alta eficiência, alta velocidade e offroad, aerodesign, foguetes, embarcações e drones.",
+    desc: "A Associação dos Grupos de Extensão Automotivos, Aeroespaciais, de Aerodesign, Arquitetura naval e Robótica (GEAR) foi fundada em 2015. Seu principal objetivo era unir, fortalecer e representar os grupos que a compõem, tendo em vista as demandas e princípios similares entre os participantes. Atualmente conta com a participação de 8 grupos, distribuídos entre projetos de robótica, veículos automotivos de alta eficiência, alta velocidade e offroad, aerodesign, foguetes, embarcações e drones.",
   },
 ];
 
