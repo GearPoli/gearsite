@@ -10,19 +10,11 @@
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "3.4.1",
     "semistandard": "^14.2.3"
   },
   "scripts": {
     "dev": "parcel ./index.html",
     "build": "parcel build ./index.html"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "eslint:recommended",
-      "plugin:react/recommended"
-    ]
   },
   "browserslist": {
     "production": [
