@@ -2,11 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./TeamCard.css";
 
-function TeamCard(props) {
+export const TeamCard = (props) => {
   const team = props.team;
   const objStyle = {
     "background-image": `url(${team.cover})`,
   };
+
   return (
     <div key={team.id} className="team-container">
       <div id={team.id} style={objStyle} className="team">
@@ -15,7 +16,7 @@ function TeamCard(props) {
           <div className="description text-center px-3">{team.desc}</div>
           <div className="buttons">
             {build_button(team.instagram, "fa fa-instagram fa-2x ml-1 mr-1")}
-            {build_button(team.facebook,"fa fa-facebook-official fa-2x ml-1 mr-1")}
+            {build_button(team.facebook, "fa fa-facebook-official fa-2x ml-1 mr-1")}
             {build_button(team.github, "fa fa-github fa-2x ml-1 mr-1")}
             {build_button(team.site, "fa fa-globe fa-2x ml-1 mr-1")}
             {build_button(team.youtube, "fa fa-youtube fa-2x ml-1 mr-1")}
@@ -25,7 +26,7 @@ function TeamCard(props) {
       </div>
     </div>
   );
-}
+};
 
 const build_button = (link, className) => {
   return link !== "" ? (
@@ -33,8 +34,7 @@ const build_button = (link, className) => {
       <i className={className} />
     </a>
   ) : (
-    <a>
-    </a>
+    <></>
   );
 };
 
@@ -48,5 +48,3 @@ TeamCard.propTypes = {
     youtube: PropTypes.string.isRequired,
   },
 };
-
-export default TeamCard;

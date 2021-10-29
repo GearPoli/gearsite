@@ -10,10 +10,9 @@
   padding: 0;
   border: 2px solid white;
   border-radius: 20px;
-
 }
 
-.team-container{
+.team-container {
   width: 500px;
   padding: 10px 10px 10px 10px;
 }
@@ -29,12 +28,12 @@
   transition: opacity 300ms ease;
 }
 
-i.fa{
+i.fa {
   color: white;
   opacity: 0.8;
 }
 
-i.fa:hover{
+i.fa:hover {
   opacity: 1;
 }
 
