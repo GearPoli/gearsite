@@ -34,7 +34,6 @@ const build_button = (link, className) => {
     </a>
   ) : (
     <a>
-      <i className={className} />
     </a>
   );
 };
