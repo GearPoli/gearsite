@@ -53,7 +53,7 @@ export default [
     instagram: "https://www.instagram.com/keepflyingpoliusp/",
     facebook: "https://www.facebook.com/polikf",
     github: "",
-    site: "",
+    site: "http://keepflyingpoliusp.com.br/",
     youtube: "https://www.youtube.com/user/polikf",
     cover: require("../../assets/img/back_kf.jpg"),
     logo: require("../../assets/img/logo_kf.png"),
